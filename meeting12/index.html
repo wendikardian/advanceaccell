@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #div{
+            overflow: scroll;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body onkeydown="keypress()">
+    <img src="https://media2.giphy.com/media/pktFWwe236Yr0Xvj9D/giphy.gif?cid=ecf05e4765879655ca67bbcfb34fcc03abc8352ff236028b&rid=giphy.gif&ct=g" alt="" height="auto" onmousedown="rotateGif(this)" onmouseout="rotateBack(this)" width="400px">
+
+    <div id="div" onscroll="scrolling()">
+        <h3>Bagaimana membedakan HTML, CSS, dan Javascript pada sebuah website</h3>
+        <p>
+            HTML, CSS, dan Javascript bisa di 
+            analogikan sebagai tubuh manusia. HTML 
+            adalah kerangka tubuh, CSS adalah pakaian 
+            atau aksesoris yang digunakan, dan Javascript 
+            adalah sel saraf yang membuat manusia bisa 
+            bergerak dan berinteraksi
+
+        </p>
+    </div>
+    <button class="button"> Event Handler</button>
+    <script>
+        var btn = document.querySelector(".button")
+        button.onclick = () => {
+            alert("Hellooo ... ")
+        }
+        function rotateGif(element){
+            element.style.transform = "translate(5px, 5px)"
+            element.style.transform = "rotate(180deg)"
+        }
+    
+        function rotateBack(element){
+            element.style.transform = "translate(0px, 0px)";
+            element.style.transform = "rotate(0deg)"
+        }
+
+
+        function scrolling(){
+            document.getElementById("div").style.color = "blue"
+        }
+
+        function keypress(){
+            var content = document.getElementById("div")
+            content.innerHTML = "you pressed a key!"
+            content.style.color = "red"
+        }
+
+        
+    </script>
+    
+</body>
+
+</html>

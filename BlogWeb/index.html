@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0e17752b2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap" rel="stylesheet">
+    <title>My Blog</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="title">
+                <img src="img/header-icon.png" alt="judul" width="40" height="40" class="img-nav">
+                <h2 class="header-title-h2">Wen's Blog</h2>
+            </div>
+            <nav>
+                <div class="nav">
+                    <a href="">Project</a>
+                    <a href="">Contact</a>
+                    <a href="">About Us</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="jumbotron">
+            <div class="jumbotron">
+                <h1 class="jumbotron-title">Dapatkan Tips programming Disini !</h1>
+                <div class="header-flex">
+                    <div>
+                        <h2 class="jumbotron-text">Baru di dunia programming ! <br> Belajar lewat pengembangan <span style="color: #f4a261">Game dan Web</span> sederhana </h2>
+                        <div class="mini-text-flex">
+                            <p class="mini-text">
+                                Belajar programming dasar disini
+                            </p>
+                            <button id="icon-up" onclick="changeText()">
+                                <i class="far fa-hand-point-up"></i>
+                            </button>
+                            <button id="icon-down" class="icon-down">
+                                <i class="far fa-hand-point-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/img-header.png" alt="Icon" class="jumbotron-img" width="500" height="300" class="jumbotron-img" onmouseout="changeImageBack(this)" onmouseover="changeImage(this)">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main-content">
+            <aside>
+                <div>
+                    <h3 class="aside-title">It's Wendi</h3>
+                    <img src="img/people.jpg" alt="profile" class="profile-picture" width="150px" height="150px">
+                    <div class="toggle">
+                        <button class="btn" id="green">
+                            <i class="fa fa-thumbs-up fa-lg"></i>
+                        </button>
+                        <button class="btn" id="red">
+                            <i class="fa fa-thumbs-down fa-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="search-tags-container">
+                    <div class="input-tag">
+                        <h3 class="aside-title">Search here</h3>
+                        <input type="text" id="myInput" placeholder="Search here">
+                        <span class="addBtn" onclick="newElement()">Search</span>
+                    </div>
+                    <ul id="myUL" class="search-tags-list">
+                        <li class="search-tags-item data-list">HTML</li>
+                        <li class="search-tags-item data-list">Code</li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="content">
+                <article id="video">
+                    <div class="item-video">
+                        <h3 class="article-title">Automate With Python</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PXMJ6FS7llk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="500px" height="350px" allowfullscreen></iframe>
+                        <h3 class="article-title">Learn basic SQL</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HXV3zeQKqGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="500px" height="350px" allowfullscreen></iframe>
+                    </div>
+                </article>
+                <article id="maps">
+                    <div class="maps">
+                        <h3 class="article-title">Visit the location</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.57065029812856!2d107.55810408654601!3d-6.8749751999344335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e58ce9d79b0d%3A0x538c7c035d3959f7!2sMasayam!5e0!3m2!1sid!2sid!4v1655793667276!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </article>
+            </div>
+            <article id="my-project">
+                <h3 class="article-title">My Project</h3>
+                <div class="project-container">
+                    <div class="project">
+                        <img src="img/project3.png" alt="">
+                        <h4 class="project-title">Ghost Buster</h4>
+                        <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil officiis dolore enim quaerat voluptates dolorum quas? Ipsam fugiat similique, at, distinctio blanditiis recusandae ullam magni sit obcaecati mollitia ratione modi.</p>
+                    </div>  
+                    <div class="project">
+                        <img src="img/project2.png" alt="">
+                        <h4 class="project-title">Florist Shop</h4>
+                        <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil officiis dolore enim quaerat voluptates dolorum quas? Ipsam fugiat similique, at, distinctio blanditiis recusandae ullam magni sit obcaecati mollitia ratione modi.</p>
+                    </div>  
+                    <div class="project">
+                        <img src="img/project1.png" alt="">
+                        <h4 class="project-title">Tourist App</h4>
+                        <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil officiis dolore enim quaerat voluptates dolorum quas? Ipsam fugiat similique, at, distinctio blanditiis recusandae ullam magni sit obcaecati mollitia ratione modi.</p>
+                    </div>  
+                </div>
+            </article>
+           
+        </div>
+        
+    </main>
+    <footer>
+        <div class="main-footer">
+            <h3 class="info-top">Wendi Kardian</h3>
+            <div class="social-media">
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-envelope"></i>
+            </div>
+            <p class="info-center">Copyright &copy; 2022. Wendi. All Rights reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
