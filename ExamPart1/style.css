@@ -70,26 +70,27 @@ hr{
 .content{
     display: flex;
     flex-wrap: wrap;
+    justify-content:flex-start;
 }
 
 
-.card-aside{
+aside{
+    /* margin-right: -100px; */
     margin-left: 40px;
+    margin-right: 100px;
     box-shadow: 0px 0px 30px gainsboro;
-    width: 400px;
     max-width: 18%;
-    max-height: 800px;
+    max-height: 300px;
     border-radius: 10px;
     flex-direction: center;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 140px;
     padding: 30px;
     border-top: 5px solid rgb(38, 70, 83);
     border-bottom: 5px solid rgb(38, 70, 83);
-    /* border: 2px solid black;s */
 }
 
-.card-aside>img{
+aside>img{
     width: 100px;
     border-radius: 50%;
     border: 2px solid black;
@@ -102,14 +103,113 @@ hr{
     color: black;
 }
 
+button{
+    background-color: transparent;
+    border: 0px;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
 a{
     text-decoration: none;
     margin-top: 20px;
-    margin: 10px;
-
+    margin: 5px;
 }
 
 
 #drawing{
+    max-width: 60%;
+    margin-top: 40px;
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center;
 
+}
+
+#drawing>h3{
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.drawing-item{
+    max-width: 200px;
+    
+    margin: 40px;
+    text-align: center;
+    padding: 30px;
+    border-top: 5px solid rgb(38, 70, 83);
+    border-radius: 10px;;
+}
+
+.drawing-item>img{
+    width: 200px;
+    border-radius: 20px;
+}
+
+#article-video{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+#article-video>h2{
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    
+    margin-bottom: 30px;
+}
+
+footer{
+    margin-top: 30px;
+    background-color: rgb(190, 223, 236);
+    
+}
+
+.center-footer{
+    margin: 0 20px;
+}
+
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.info-top{
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    color: rgb(33, 45, 64);
+}
+
+.info-center{
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid white;
+    color: rgb(33, 45, 64);
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-instagram-square, .fa-twitter-square, .fa-facebook-square, .fa-envelope {
+    padding: 5px;
+    font-size: 30px;
+    color: rgb(33,45, 64);
 }
