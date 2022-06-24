@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+        .item{
+            display: inline-block;
+            padding: 6px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            width: 100px;
+            position: relative;
+            margin: 0 5px;
+            text-align: center;
+            box-shadow: 5px 5px 10px rgb(177, 169, 169);
+        }
+
+        .item a{
+            text-decoration: none;
+            color: rgb(247, 246, 245);
+        }
+
+        .name{
+            margin: 0px;
+        }
+
+        .company{
+            font-size: 10px;
+            margin-top: 3px;
+        }
+
+        .close{
+            position: absolute;
+            top: 0px;
+            right: 3px;
+            font-weight: bold;
+        }
+
+        .close:hover{
+            color: red;
+            cursor: pointer;
+        }
+
+    </style>
+    <title>Meeting 13 - DOM Traversal</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="https://originassets.akamaized.net/origin-com-store-final-assets-prod/55482/231.0x326.0/1011164_LB_231x326_en_WW_%5E_2019-06-26-09-34-45_7105a6cedde2619568d0d477bcf460506034f67d.jpg" alt="" width="90px" height="auto">
+            <h3>The Sims</h3>
+            <a href="" class="close">x</a>
+        </div>
+        <div class="item">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/945360/capsule_616x353.jpg?t=1646296970" alt="" width="90px" height="auto">
+            <h3>Among Us</h3>
+            <a href="" class="close">x</a>
+        </div>
+        <div class="item">
+            <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/05/30/35476267.jpg" alt="" width="90px" height="auto">
+            <h3>Minecraft</h3>
+            <a href="" class="close">x</a>
+        </div>
+    </div>
+    <script>
+        var close = document.querySelectorAll('.close')
+        for(let i = 0; i< close.length; i++){
+            close[i].addEventListener('click', (e) => {
+                e.target.parentElement.style.display = 'none'
+                e.preventDefault()
+                e.stopPropagation()
+            })
+        }
+        var item = document.querySelectorAll('.item')
+        for(i = 0; i<item.length; i++){
+            item[i].addEventListener('click', (e) => {
+                alert(`Item ${i} clicked`)
+            })
+        }
+    </script>
+</body>
+</html>

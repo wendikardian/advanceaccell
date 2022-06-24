@@ -27,10 +27,11 @@
             bergerak dan berinteraksi
 
         </p>
+        <h2 class="hello">HELLO</h2>
     </div>
     <button class="button"> Event Handler</button>
     <script>
-        var btn = document.querySelector(".button")
+        var button = document.querySelector(".button")
         button.onclick = () => {
             alert("Hellooo ... ")
         }
@@ -54,6 +55,11 @@
             content.innerHTML = "you pressed a key!"
             content.style.color = "red"
         }
+
+        var helloh2 = document.querySelector(".hello")
+        helloh2.addEventListener("click", () => {
+            helloh2.innerHTML = "HAIII"
+        })
 
         
     </script>

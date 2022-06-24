@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+        .item{
+            display: inline-block;
+            padding: 6px;
+            background-color: gainsboro;
+            border-radius: 10px;
+            width: 100px;
+            position: relative;
+            margin: 0 5px;
+            text-align: center;
+            box-shadow: 5px 5px 10px rgb(177, 169, 169);
+        }
+
+        .item a{
+            text-decoration: none;
+            color: rgb(247, 246, 245);
+        }
+
+        .name{
+            margin: 0px;
+        }
+
+        .company{
+            font-size: 10px;
+            margin-top: 3px;
+        }
+
+        .close{
+            position: absolute;
+            top: 0px;
+            right: 3px;
+            font-weight: bold;
+        }
+
+        .close:hover{
+            color: red;
+            cursor: pointer;
+        }
+
+    </style>
+    <title>Meeting 13 - DOM Traversal</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/17361/production/_124937059_gettyimages-1240408699.jpg" alt="" width="90px" height="auto">
+            <h3>Elon Musk</h3>
+            <p>CEO of SpaceX, Tesla, and Twitter</p>
+            <a href="" class="close">x</a>
+        </div>
+        <div class="item">
+            <img src="https://static.republika.co.id/uploads/images/inpicture_slide/035597700-1637636041-jeff_bezos_123033_bigjpg.jpg" alt="" width="90px" height="auto">
+            <h3>Jeff Bezos</h3>
+            <p>CEO of Amazon</p>
+            <a href="" class="close">x</a>
+        </div>
+        <div class="item">
+            <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/10/05/1258955827.jpg" alt="" width="90px" height="auto">
+            <h3>Mark Zuckerberg</h3>
+            <p>CEO of Facebook</p>
+            <a href="" class="close">x</a>
+        </div>
+    </div>
+    <script>
+        var close = document.querySelectorAll('.close')
+        for(let i = 0; i< close.length; i++){
+            close[i].addEventListener('click', (e) => {
+                e.target.parentElement.style.display = 'none'
+                e.preventDefault()
+            })
+        }
+    </script>
+</body>
+</html>
