@@ -9,13 +9,15 @@ function changeImageBack(element){
 var btnLike = document.querySelector('#green')
 var btnDislike = document.querySelector("#red")
 
-btnLike.onclick = likeColor()
-btnDislike.onclick = dislikeColor()
+btnLike.onclick = likeColor
+btnDislike.onclick = dislikeColor
 
 function likeColor(){
     if(btnDislike.classList.contains('red')){
         btnDislike.classList.remove('red')
     }
+    // console.log("Helll")
+    // var a  = this.querySelector('i');
     this.classList.toggle('green')
 }
 
@@ -24,4 +26,6 @@ function dislikeColor(){
         btnLike.classList.remove('green')
     }
     this.classList.toggle('red')
+    // var a  = this.querySelector('i');
+    // a.classList.toggle('red')
 }
