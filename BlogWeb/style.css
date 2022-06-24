@@ -13,6 +13,7 @@
     color: rgb(224,162,97);
     position: fixed;
     width: 100%;
+    z-index: 100;
 }
 
 .title{
