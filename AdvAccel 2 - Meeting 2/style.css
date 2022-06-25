@@ -1,0 +1,39 @@
+.title{
+    text-align: center;
+}
+
+.form{
+    padding: 15px;
+    background-color: rgb(159, 231, 174);
+    box-shadow: 0 0 5px rgb(1116, 240, 142);
+    border-radius: 5px;
+    width: 40%;
+    padding: 60px;
+
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    display: inline-block;
+    margin-bottom: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.section{
+    justify-content: flex-start;
+    text-align: right;
+    max-width: 50%;
+    display: flex;
+    text-align: left;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: 10px;
+}

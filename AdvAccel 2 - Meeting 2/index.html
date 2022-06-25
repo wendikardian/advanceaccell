@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Learn Form part 2</title>
+</head>
+<body>
+    <div class="form">
+        <h3 class="title">Coding Competition <br> Enrollment 2021</h3>
+        <form action="result.html" method="GET" target="blank" autocomplete="on" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" autocomplete="off" autofocus>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your personal email" required>
+            <label for="birth">Birth of date</label>
+            <input type="date" id="birth" name="birth">
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="30" rows="10">The full adress of yours</textarea>
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity">
+            <label for="radio" style="margin-bottom: 10px;">Programming Language</label>
+            <div class="section">
+                <input id="radio" type="radio" name="language" value HTML>
+                <label for="language">HTML</label>
+            </div>
+            <div class="section">
+                <input id="radio" type="radio" name="language" value HTML>
+                <label for="language">CSS</label>
+            </div>
+            <div class="section">
+                <input id="radio" type="radio" name="language" value HTML>
+                <label for="language">Javascript</label>
+            </div>
+            
+            <br>
+            <label for="level">Level :</label>
+            <select name="level" id="level">
+                <option value="kids">Kids</option>
+                <option value="teens">Teens</option>
+                <option value="adult">Adult</option>
+            </select>
+            <br>
+            <br>
+            <label for="file">Upload Form registrasion</label>
+            <input type="file" type="file" name="file" multiple>
+            <br>
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone">
+            <div class="section">
+                <input type="checkbox" id="checkbox" name="checkbox1" value="agree">
+                <label for="checkbox">Do you agree for the agreement</label>
+            </div>
+            <input type="submit" value="submit" class="submit-btn">
+        </form>
+    </div>
+</body>
+</html>
