@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinator</title>
+    <style>
+
+        *{
+            color: darkgreen;
+        }
+
+        :not(h1){
+            color: black;
+        }
+        h3 ~ p{
+            color: darkblue;
+        }
+
+        h1+p{
+            color: darkgreen;
+        }
+
+        div>p{
+            color: red;
+        }
+
+
+        a:link{
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited{
+            background-color:black;
+            color: red;
+            text-decoration: bold;
+        }
+
+        input[type=number]:placeholder-shown{
+            background-color: wheat;
+        }
+
+        input:enabled{
+            background-color: white;
+        }
+
+        input:disabled{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nama-nama Zodiak</h1>
+    <p>Ayo cari tau tentang zodiak!</p>
+    <h3>1. Aries</h3>
+    <div>
+        <p>Tanggal : 21 Maret - 19 April</p>
+        <p>Simbol : Domba</p>
+    </div>
+    <h3>2. Aries</h3>
+    <div>
+        <p>Tanggal : 20 April - 20 Mei</p>
+        <p>Simbol : Banteng</p>
+    </div>
+
+    <p>Tanggal berapa kamu lahir ?</p>
+    <p>Jadi, apa zodiak mu ?</p>
+
+    <h2>Facebook atau Instagram ?</h2>
+    <a href="https://www.facebook.com/" target="blank">Kunjungi Facebook</a><br>
+    <a href="https://www.instagram.com" target="blank">Kunjungi Instagram</a>
+<br>
+<br>
+<br>
+<br>
+    <label for="text">Mana yanng lebih sering kamu gunakan ?</label><br>
+    <input type="text" id="text"><br>
+    <label for="number">Berapa jam kamu menggunakan dalam seehari ? </label><br>
+    <input type="number"  id="number" placeholder="jumlah"><br>
+    <label for="">Jelaskan caramu agar tidak berlebihan memainkannya ! </label><br>
+    <input type="text" disabled><br><br>
+    <input type="submit" value="submit">
+
+</body>
+</html>
