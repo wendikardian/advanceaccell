@@ -528,3 +528,55 @@ textarea:focus + .form-label {
     /* bottom: 50px; */
     z-index: 3;
 }
+
+.section-container{
+    text-align:center;
+    padding: 10px;
+}
+
+.section-table{
+    font-size: 40px;
+    margin: 50px 0 0;
+}
+
+.section-subtitle{
+    font-size: 15px;
+    color: gray;
+    margin: 10px 0 0;
+}
+
+.about-flex-item{
+    display: block;
+}
+
+.about-image{
+    margin: 0;
+}
+
+.blob-image{
+    width: 500px;
+    height: auto;
+    transition: rotate(-90deg);
+}
+
+.blogger-image{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    left: 580px;
+    top: 350px;
+}
+
+.about-description p{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+}
+
+
+.about-description h4{
+    color: gray;
+    letter-spacing: 2px;
+}
