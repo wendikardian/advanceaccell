@@ -458,8 +458,18 @@ textarea:focus + .form-label {
 .slide{
     width: 100%;
     position: absolute;
+    clip-path: circle(0% at 0 50%);
 }
 
+.slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+
+.slider-btn.active{
+    background-color:  rgb(38,70,83)
+}
 
 .slide img{
     width: 100%;
