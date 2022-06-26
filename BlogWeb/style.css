@@ -52,6 +52,7 @@ a{
     padding: 20px;
     text-align: center;
     background-color: rgb(38,70,83);
+    height: 600px;
 }
 
 .header-flex{
@@ -512,4 +513,18 @@ textarea:focus + .form-label {
     border-radius: 50%;
     cursor: pointer;
     margin: 0 5px;
+}
+
+.wave1{
+    position: absolute;
+    top: 275px;
+    /* bottom: 70px; */
+    z-index: 2;
+}
+
+.wave2{
+    position: absolute;
+    top: 290px;
+    /* bottom: 50px; */
+    z-index: 3;
 }

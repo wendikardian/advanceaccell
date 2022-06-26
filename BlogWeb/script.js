@@ -106,8 +106,8 @@ var repeat = function(activeClass){
             slides[i].classList.add('active')
             buttons[i].classList.add('active')
             i++;
-            if(slides.length == 1){
-                i == 0
+            if(slides.length == i){
+                i = 0
             }
             if(i>= slides.length){
                 return
