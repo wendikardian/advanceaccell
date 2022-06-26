@@ -563,8 +563,8 @@ textarea:focus + .form-label {
     position: absolute;
     width: 200px;
     height: auto;
-    left: 580px;
-    top: 350px;
+    left: 630px;
+    top: 200px;
 }
 
 .about-description p{
@@ -579,4 +579,51 @@ textarea:focus + .form-label {
 .about-description h4{
     color: gray;
     letter-spacing: 2px;
+}
+
+
+.skills-flex{
+    display: flex;
+    align-item: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.skill-item{
+    box-shadow: 0 0 3px gainsboro;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+}
+
+.skill-item img{
+    width: 200px;
+    height: 180px;
+}
+
+.skill-item p{
+    padding: 5px;
+    box-shadow: 0 0 10px gainsboro;
+    border-radius: 5px;
+    background-color: rgb(243, 199, 117);
+}
+
+.activity-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.activity-item{
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 3px gainsboro;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.activity-item img{
+    width: 350px;
+    height: auto;
 }
