@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            width: 80%;
+            border: 2px solid black;
+        }
+
+        .aircraft{
+            display: block;
+            width: 50px;
+            margin-bottom: 20px;
+            transition-duration: 3s;
+            /* transition-property: margin-left; */
+        }
+
+        .container:hover .aircraft{
+            margin-left: 200px;
+            width: 70px;
+        }
+
+        .a1{
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 2);
+        }
+
+        .last-aircraft{
+            display: block;
+            width: 50px;
+            height: auto;
+            opacity: 0.5;
+            margin-bottom: 20px;
+            transition: width 3s ease-in 1s, opacity 3s ease-out 1s, margin-left 3s ease-in-out 1s;
+        }
+
+        .last-aircraft:hover{
+            width: 80px;
+            opacity: 1;
+            margin-left: 30px
+        }
+    </style>
+    <title>Meeting 7</title>
+</head>
+<body>
+    <div class="container">
+        <img src="https://freepngimg.com/save/58336-airplane-animation-aircraft-plane-cartoon-free-download-png-hq/1711x1141" class="last-aircraft" alt="">
+
+    </div>
+</body>
+</html>
