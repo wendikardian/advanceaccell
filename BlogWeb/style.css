@@ -682,4 +682,26 @@ textarea:focus + .form-label {
     text-indent: 40px;
 }
 
+p.project-link{
+    text-indent: 0;
+}
 
+
+.project-link a{
+    color: cadetblue;
+    text-decoration: underline;
+    margin: 0px;
+    padding: 0px;
+}
+
+.rocket-container{
+    postition: relative;
+}
+
+.rocket-container img{
+    postition: absolute;
+    width: 180px;
+    top: 0px;
+    right: 0px;
+    transform: translateY(-50%);
+}
