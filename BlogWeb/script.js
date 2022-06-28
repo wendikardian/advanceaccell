@@ -4,25 +4,8 @@ function changeText(){
     document.getElementById("icon-down").style.display = "block";
 }
 
-var btnLike = document.querySelector('#green')
-var btnDislike = document.querySelector("#red")
 
-btnLike.onclick = likeColor
-btnDislike.onclick = dislikeColor
 
-function likeColor(){
-    if(btnDislike.classList.contains('red')){
-        btnDislike.classList.remove('red')
-    }
-    this.classList.toggle('green')
-}
-
-function dislikeColor(){
-    if(btnLike.classList.contains('green')){
-        btnLike.classList.remove('green')
-    }
-    this.classList.toggle('red')
-}
 
 function changeImage(element){
     element.setAttribute('src', 'img/img-header2.png')
@@ -120,4 +103,37 @@ var repeat = function(activeClass){
 
 repeat()
 
-AOS.init();
+
+var codingProjects = document.querySelectorAll('.project');
+codingProjects.forEach((project, index) => {
+    project.dataset.aos = 'fade-down';
+    project.dataset.aosDuration = 1500;
+    project.dataset.aosDelay = index*300;
+})
+var codingProjectsDetails = document.querySelectorAll('.project-detail');
+codingProjectsDetails.forEach((project, index) => {
+    project.dataset.aos = 'fade-down';
+    project.dataset.aosDuration = 1500;
+    project.dataset.aosDelay = index*300;
+})
+var skillItems = document.querySelectorAll('.skill-item');
+skillItems.forEach((skill, index) => {
+    skill.dataset.aos = 'fade-down';
+    skill.dataset.aosDuration = 1500;
+    skill.dataset.aosDelay = index*300;
+})
+var activityItems = document.querySelectorAll('.activity-item');
+activityItems.forEach((activity, index) => {
+    activity.dataset.aos = 'fade-down';
+    activity.dataset.aosDuration = 1500;
+    activity.dataset.aosDelay = index*300;
+})
+var itemVideo = document.querySelectorAll('.item-video');
+itemVideo.forEach((video, index) => {
+    video.dataset.aos = 'fade-down';
+    video.dataset.aosDuration = 1500;
+    video.dataset.aosDelay = index*300;
+})
+AOS.init({
+    once: true
+});

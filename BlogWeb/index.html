@@ -35,7 +35,7 @@
                 <h1 class="jumbotron-title">Dapatkan Tips programming Disini !</h1>
                 <div class="header-flex">
                     <div>
-                        <h2 class="jumbotron-text" data-aos="fade-right">Baru di dunia programming ! <br> Belajar lewat pengembangan <span style="color: #f4a261">Game dan Web</span> sederhana </h2>
+                        <h2 class="jumbotron-text" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000" data-aos-delay="500" data-aos-easing="ease-in">Baru di dunia programming ! <br> Belajar lewat pengembangan <span style="color: #f4a261">Game dan Web</span> sederhana </h2>
                         <div class="mini-text-flex">
                             <p class="mini-text">
                                 Belajar programming dasar disini
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="img/img-header.png" alt="Icon" class="jumbotron-img" width="500" height="300" class="jumbotron-img" onmouseout="changeImageBack(this)" onmouseover="changeImage(this)">
+                        <img src="img/img-header.png" alt="Icon" class="jumbotron-img" width="500" height="300" class="jumbotron-img" onmouseout="changeImageBack(this)" onmouseover="changeImage(this)" data-aos="flip-down" data-aos-offset="600">
                     </div>
                 </div>
             </div>
@@ -111,10 +111,10 @@
                     <h3 class="aside-title">It's Wendi</h3>
                     <img src="img/people.jpg" alt="profile" class="profile-picture" width="150px" height="150px">
                     <div class="toggle">
-                        <button class="btn" id="green">
+                        <button class="btn" id="green" onclick="likeColor()">
                             <i class="fa fa-thumbs-up fa-lg"></i>
                         </button>
-                        <button class="btn" id="red">
+                        <button class="btn" id="red" onclick="dislikeColor()">
                             <i class="fa fa-thumbs-down fa-lg"></i>
                         </button>
                     </div>
@@ -184,6 +184,27 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var btnLike = document.querySelector('#green')
+        var btnDislike = document.querySelector("#red")
+
+        btnLike.onclick = likeColor
+        btnDislike.onclick = dislikeColor
+
+        function likeColor(){
+            if(btnDislike.classList.contains('red')){
+                btnDislike.classList.remove('red')
+            }
+            this.classList.toggle('green')
+        }
+
+        function dislikeColor(){
+            if(btnLike.classList.contains('green')){
+                btnLike.classList.remove('green')
+            }
+            this.classList.toggle('red')
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
