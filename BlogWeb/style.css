@@ -563,7 +563,7 @@ textarea:focus + .form-label {
     position: absolute;
     width: 200px;
     height: auto;
-    left: 630px;
+    left: 45%;
     top: 200px;
 }
 
