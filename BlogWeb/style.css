@@ -819,3 +819,27 @@ p.project-link{
         transform: translateY(-900px) scale(0.1);
     }
 }
+
+@media(max-width: 900px){
+    *{
+        font-size: 2.5vw;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .splash h1{
+        font-size: 3vw;
+    }
+
+    .astronaut-dabbing{
+        top: 12%;
+        left: 18%;
+        width: 200px;
+    }
+
+    .astronaut-takeoff{
+        /* margin-top: -200px; */
+        top: 50%;
+        left: 7%;
+    }
+}
