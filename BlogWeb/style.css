@@ -984,4 +984,50 @@ p.project-link{
     input.submit{
         margin-top: 200px;
     }
+
+    .footer-contact{
+        margin-top: 200px;
+        position: relative;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .section-title{
+        font-size: 4vw;
+    }
+
+    .section-subtitle{
+        font-size: 2vw;
+    }
+
+    .blob-image{
+        margin-top: 70px;
+        max-width: 60%;
+        max-height: 60%;
+        transform: rotate(-90deg)
+    }
+
+    .blogger-image{
+        position: absolute;
+        max-width: 27%;
+        max-height: 50%;
+        left: 37%;
+        top: 200px;
+    }
+
+    .about-description p{
+        width: 80%;
+    }
+
+    .skill-item{
+        margin: 5px;
+    }
+
+    h2.section-title{
+        margin-top: 50px;
+    }
+
+    .skills-flex{
+        flex-wrap: wrap;
+    }
 }
