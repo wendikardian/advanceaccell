@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .blue{
+            color: blue;
+        }
+    </style>
+    <title>DOM</title>
+</head>
+<body>
+    <p id="hello-world">Hello World</p>
+    <h1>My name is Wendi</h1>
+    <h1 class="text-atribute">My name is Jesson</h1>
+    <h1>My name is Radith</h1>
+
+    <script>
+        document.getElementById("hello-world").innerHTML = "Selamat Pagi"
+        var isiH1 = document.getElementsByTagName("h1");
+        // console.log(isiH1);
+        isiH1[1].innerHTML = "My name is Satria"
+        isiH1[1].className = 'blue';
+        isiH1[2].style.backgroundColor = "yellow"
+        // document.getElementsByClassName("text-atribute")
+    </script>
+</body>
+</html>

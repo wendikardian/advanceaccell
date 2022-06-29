@@ -1,8 +1,4 @@
-function changeText(){
-    var replaceText = document.getElementsByClassName("mini-text")[0].innerHTML = "Scroll untuk melihat"
-    document.getElementById("icon-up").style.display = "none";
-    document.getElementById("icon-down").style.display = "block";
-}
+
 
 
 

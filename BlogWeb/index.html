@@ -35,7 +35,6 @@
                 <h1 class="jumbotron-title">Dapatkan Tips programming Disini !</h1>
                 <div class="header-flex">
                     <div>
-                        <h2 class="jumbotron-text" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000" data-aos-delay="500" data-aos-easing="ease-in">Baru di dunia programming ! <br> Belajar lewat pengembangan <span style="color: #f4a261">Game dan Web</span> sederhana </h2>
                         <div class="mini-text-flex">
                             <p class="mini-text">
                                 Belajar programming dasar disini
@@ -47,6 +46,8 @@
                                 <i class="far fa-hand-point-down"></i>
                             </button>
                         </div>
+                        <h2 class="jumbotron-text" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000" data-aos-delay="500" data-aos-easing="ease-in">Baru di dunia programming ! <br> Belajar lewat pengembangan <span style="color: #f4a261">Game dan Web</span> sederhana </h2>
+                       
                     </div>
                     <div>
                         <img src="img/img-header.png" alt="Icon" class="jumbotron-img" width="500" height="300" class="jumbotron-img" onmouseout="changeImageBack(this)" onmouseover="changeImage(this)" data-aos="flip-down" data-aos-offset="600">
@@ -184,7 +185,13 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
     <script>
+        function changeText(){
+            var replaceText = document.getElementsByClassName("mini-text")[0].innerHTML = "Scroll untuk melihat"
+            document.getElementById("icon-up").style.display = "none";
+            document.getElementById("icon-down").style.display = "block";
+        }
         var btnLike = document.querySelector('#green')
         var btnDislike = document.querySelector("#red")
 
@@ -205,6 +212,5 @@
             this.classList.toggle('red')
         }
     </script>
-    <script src="script.js"></script>
 </body>
 </html>
