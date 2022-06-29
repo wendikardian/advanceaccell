@@ -133,3 +133,15 @@ itemVideo.forEach((video, index) => {
 AOS.init({
     once: true
 });
+
+
+var btnSubmit = document.querySelector('.submit');
+var modal = document.querySelector('.modal-container');
+
+if(btnSubmit){
+    btnSubmit.addEventListener('click', function() {
+        modal.classList.add('show');
+        const next = document.querySelector('.next');
+        next.setAttribute('value', 'https://webblogadvance.netlify.app/contact.html')
+    })
+}
