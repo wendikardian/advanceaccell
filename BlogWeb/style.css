@@ -953,4 +953,35 @@ p.project-link{
     .rocket-container{
         display: none;
     }
+
+    .contact-container{
+        justify-content: center;
+    }
+
+    .illustration-img{
+        display: none;
+    }
+
+    .modal{
+        display: flex;
+        align-item: center;
+        flex-direction: column;
+        max-width: 60%;
+        max-height: 40%;
+        padding: 10px;
+    }
+
+    .modal h3{
+        margin: 0;
+        padding: 0;
+        font-size: 4vw;
+    }
+
+    .modal img{
+        max-width: 60%;
+    }
+
+    input.submit{
+        margin-top: 200px;
+    }
 }
