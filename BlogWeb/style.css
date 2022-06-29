@@ -846,7 +846,7 @@ p.project-link{
     }
 
     .header{
-        height: 40px;
+        height: 70px;
     }
     .jumbotron{
         height: 400px;
@@ -885,6 +885,72 @@ p.project-link{
 
 
     .jumbotron img{
+        display: none;
+    }
+
+    aside{
+        display: none;
+    }
+
+    .main-content{
+        margin: 0;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+
+    .content{
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    #maps iframe{
+        width: 500px;
+        height: 300px !important;
+    }
+    footer{
+        margin-top: 100px;
+    }
+
+    .item-video iframe{
+        width: 500px;
+        height: 300px !important;
+    }
+
+    .image-slider{
+        width: 70%;
+    }
+
+    #my-project{
+        width: 80%;
+    }
+
+    .page-title h1{
+        margin-top: 50px;
+        font-size: 4vw;
+    }
+
+    .project-detail{
+        display: block;
+    }
+
+    .project-detail img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .project-description h3{
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .project-description p{
+        font-size: 2vw;
+    }
+
+    .rocket-container{
         display: none;
     }
 }
