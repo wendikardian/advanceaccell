@@ -1,13 +1,18 @@
 
 
-
-
-
 function changeImage(element){
     element.setAttribute('src', 'img/img-header2.png')
 }
 function changeImageBack(element){
     element.setAttribute('src', 'img/img-header.png')
+}
+
+function changeText(element){
+    element.innerHTML = "Pengembangan Website dan Game"
+}
+
+function changeTextBack(element){
+    element.innerHTML = "Dapatkan Tips programming Disini !"
 }
 
 var myList = document.getElementsByTagName("li");

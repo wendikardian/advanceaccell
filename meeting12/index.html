@@ -39,23 +39,18 @@
             element.style.transform = "translate(5px, 5px)"
             element.style.transform = "rotate(180deg)"
         }
-    
         function rotateBack(element){
             element.style.transform = "translate(0px, 0px)";
             element.style.transform = "rotate(0deg)"
         }
-
-
         function scrolling(){
             document.getElementById("div").style.color = "blue"
         }
-
         function keypress(){
             var content = document.getElementById("div")
             content.innerHTML = "you pressed a key!"
             content.style.color = "red"
         }
-
         var helloh2 = document.querySelector(".hello")
         helloh2.addEventListener("click", () => {
             helloh2.innerHTML = "HAIII"

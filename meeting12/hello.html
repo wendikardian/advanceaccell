@@ -7,18 +7,30 @@
     <title>Meeting 12</title>
 </head>
 <body style="margin: 30px;">
-    <img src="https://media3.giphy.com/media/MENRy9Cqnonhm/giphy.gif?cid=ecf05e47de0knsrb89k63fszdxx8qv9tiibpqp2s3aj2n5kx&rid=giphy.gif&ct=g" alt="" onmouseover="rotateGIf(this)" onmouseout="rotateBack(this)">
-
+    <img src="https://media3.giphy.com/media/MENRy9Cqnonhm/giphy.gif?cid=ecf05e47de0knsrb89k63fszdxx8qv9tiibpqp2s3aj2n5kx&rid=giphy.gif&ct=g" alt="" onmouseout="rotateBack(this)" >
+    <button>Click here</button>
     <script>
-        function rotateGIf(element){
-            element.style.transform = "translate(5px 5px)";
-            element.style.transform = "rotate(180deg)"
-        }
+    
+    var img = document.querySelector("img")
+    console.log(img)
+    
+    var btn = document.querySelector("button")
+    btn.onclick = () => {
+        alert("HELLLO")
+    }
 
-        function rotateBack(element){
-            element.style.transform = "translate(0px 0px)"
-            element.style.transform = "rotate(0deg)"
-        }
+
+    img.addEventListener("mouseover", function() {
+        img.style.transform = "translate(5px, 5px)"
+        img.style.transform = "rotate(180deg)"
+    })
+
+
+    function rotateBack(element){
+        element.style.transform = "translate(0px, 0px)"
+        element.style.transform = "rotate(0deg)"
+    }
+
     </script>
 </body>
 </html>

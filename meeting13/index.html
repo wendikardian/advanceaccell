@@ -68,17 +68,19 @@
             <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/10/05/1258955827.jpg" alt="" width="90px" height="auto">
             <h3>Mark Zuckerberg</h3>
             <p>CEO of Facebook</p>
-            <a href="" class="close">x</a>
+            <a href="https://www.youtube.com/" class="close">x</a>
         </div>
     </div>
     <script>
         var close = document.querySelectorAll('.close')
-        for(let i = 0; i< close.length; i++){
+        console.log(close)
+        for(let i=0; i < close.length; i++) {
             close[i].addEventListener('click', (e) => {
                 e.target.parentElement.style.display = 'none'
                 e.preventDefault()
             })
         }
+
     </script>
 </body>
 </html>

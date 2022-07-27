@@ -29,8 +29,6 @@
   .header-info {
     text-align: left;
     color: rgb(219, 84, 75);
-    /* float: left;     */
-    /* float left sama dg pake ini:*/
     position: absolute;
     left: 0;
     padding: 0px;

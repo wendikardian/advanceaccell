@@ -37,7 +37,7 @@
     <main>
         <section id="jumbotron">
             <div class="jumbotron">
-                <h1 class="jumbotron-title">Dapatkan Tips programming Disini !</h1>
+                <h1 class="jumbotron-title" onmouseout="changeTextBack(this)" onmouseover="changeTextTitle(this)">Dapatkan Tips programming Disini !</h1>
                 <div class="header-flex">
                     <div>
                         <div class="mini-text-flex">
@@ -141,6 +141,7 @@
                     <div class="item-video">
                         <h3 class="article-title">Automate With Python</h3>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/PXMJ6FS7llk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="500px" height="350px" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fJEbVCrEMSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h3 class="article-title">Learn basic SQL</h3>
                         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/vNoKguSdy4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/HXV3zeQKqGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="500px" height="350px" allowfullscreen></iframe>
@@ -218,6 +219,14 @@
                 btnLike.classList.remove('green')
             }
             this.classList.toggle('red')
+        }
+
+        function changeTextTitle(element){
+            element.innerHTML = "Pengembangan Website dan Game"
+        }
+
+        function changeTextBack(element){
+            element.innerHTML = "Dapatkan Tips programming Disini !"
         }
     </script>
 </body>
