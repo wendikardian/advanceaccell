@@ -78,10 +78,11 @@
                 e.stopPropagation()
             })
         }
+
         var item = document.querySelectorAll('.item')
-        for(i = 0; i<item.length; i++){
+        for(let i = 0; i< item.length; i++){
             item[i].addEventListener('click', (e) => {
-                alert(`Item clicked`)
+                alert("You clicked the card")
             })
         }
     </script>

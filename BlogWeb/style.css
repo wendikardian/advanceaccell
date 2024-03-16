@@ -12,6 +12,7 @@
     background-color:rgb(38,70,83);
     color: rgb(224,162,97);
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 100;
 }
@@ -561,9 +562,9 @@ textarea:focus + .form-label {
 
 .blogger-image{
     position: absolute;
-    width: 200px;
+    width: 500px;
     height: auto;
-    left: 45%;
+    left: 32%;
     top: 200px;
 }
 

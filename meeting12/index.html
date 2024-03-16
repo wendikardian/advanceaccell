@@ -32,9 +32,7 @@
     <button class="button"> Event Handler</button>
     <script>
         var button = document.querySelector(".button")
-        button.onclick = () => {
-            alert("Hellooo ... ")
-        }
+        
         function rotateGif(element){
             element.style.transform = "translate(5px, 5px)"
             element.style.transform = "rotate(180deg)"
@@ -52,10 +50,17 @@
             content.style.color = "red"
         }
         var helloh2 = document.querySelector(".hello")
+
         helloh2.addEventListener("click", () => {
             helloh2.innerHTML = "HAIII"
         })
 
+        helloh2.addEventListener("click", function(){
+            alert("MY NAME IS WENDI+")
+        })
+        button.onclick = () => {
+            alert("Hellooo ... ")
+        }
         
     </script>
     

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        border: 2px solid green;
+       }
+
+       img{
+        width: 100px;
+        animation-name: animasiWitch;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+       }
+
+       @keyframes animasiWitch{
+        0%{
+            margin-left: 0px;
+            margin-top: 0px;
+        }25%{
+            margin-left: 50px;
+            margin-top: 10px;
+        }50%{
+            margin-left: 150px;
+            margin-top: 50px;
+        }100%{
+            margin-right: 80px;
+            margin-bottom: 100px;
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="witch.png" alt="" class="witch">
+    </div>
+</body>
+</html>

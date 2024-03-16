@@ -134,7 +134,7 @@
         background-color: antiquewhite;
    }
    .dropdown-item:hover {
-        background-color:whitesmoke ;
+        background-color:rgb(199, 118, 53) ;
         cursor: pointer;
    }
    a.dropdown-item {
@@ -238,7 +238,8 @@
 
 
    footer{
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+      background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
     margin-top: 40px;
    }
 

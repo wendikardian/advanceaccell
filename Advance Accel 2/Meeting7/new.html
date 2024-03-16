@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        img{
+            margin: 0px;
+            width: 100px;
+            height: 100px;
+            /* transition: all 2s ease 1s; */
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            transition-delay: 1s;
+
+        }
+
+        .container{
+            width: 100%;
+            border: 2px solid red;
+        }
+
+        .container:hover img{
+            margin: 100px;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://freepngimg.com/save/58336-airplane-animation-aircraft-plane-cartoon-free-download-png-hq/1711x1141" class="aircraft" alt="">
+    </div>
+</body>
+</html>

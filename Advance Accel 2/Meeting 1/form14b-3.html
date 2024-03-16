@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+</head>
+<body>
+    <h1>Coding Competition Form</h1>
+    <form action="result.html" method="get" target="blank" autocomplete="on">
+        <div class="input-con">
+            <label for="username">Username : </label>
+            <input type="text" id="username" name="username" autofocus>
+        </div>
+        <div class="input-con">
+            <label for="password">Password : </label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="input-con">
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+        </div>
+        <div class="input-con">
+            <label for="phone">Phone Number : </label>
+            <input type="number" id="phone"  name="phone" value="902123" min="10" max="20">
+        </div>
+        <div class="input-con">
+            <label for="date">Date of Birth</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div class="input-con">
+            <label for="alamat">Alamat : </label>
+            <textarea name="alamat" id="alamat" cols="40" rows="10"></textarea>
+        </div>
+        <p>Pilihan Course</p>
+        <div class="input-con">
+            <input type="checkbox" id="HTML" name="html" value="html">
+            <label for="HTML">HTML</label>
+        </div>
+        <div class="input-con">
+            <input type="checkbox" id="CSS" name="css" value="css">
+            <label for="CSS">CSS</label>
+        </div>
+        <div class="input-con">
+            <input type="checkbox" id="Js" name="js" value="js">s
+            <label for="JS">Javascript</label>
+        </div>
+        
+        <p>Category : </p>
+        <div class="input-con">
+            <input type="radio" id="kids" name="category" value="kids">
+            <label for="kids">Kids</label>
+        </div>
+        <div class="input-con">
+            <input type="radio" id="teens" name="category" value="teens">
+            <label for="teens">Teens</label>
+        </div>
+        <div class="input-con">
+            <input type="radio" id="adult" name="category" value="adult">
+            <label for="teens">Adult</label>
+        </div>
+        <br>
+        <div class="input-con">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="input-con">
+            <label for="">Photo</label>
+            <input type="file" multiple>
+        </div>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -7,17 +7,18 @@
     <title>Meeting 4</title>
 </head>
 <body>
+
     <script>
-        var genres = ["Jazz", "Pop", "Rock", "Rap"]
-        for(let i=0; i<genres.length; i++){
-            document.write("I Choose " + genres[i] + "<br>");
-        }
+        let brandLaptop = ["Asus", "Lenovo", "HP", "Toshiba", "MSI", "Acer"]
 
-        document.write("<br><br><br><h1>Using for each</h1></br>");
-
-        genres.forEach(genre => {
-            document.write(`I Choose ${genre} <br>`)
+        // for(let i = 0; i< brandLaptop.length; i++){
+        //     document.write(brandLaptop[i] + "<br>")
+        // }
+        
+        brandLaptop.forEach(function(laptop){
+            document.write(laptop + "<br>")
         })
+
     </script>
 </body>
 </html>

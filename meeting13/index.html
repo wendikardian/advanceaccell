@@ -69,18 +69,27 @@
             <h3>Mark Zuckerberg</h3>
             <p>CEO of Facebook</p>
             <a href="https://www.youtube.com/" class="close">x</a>
+            <!-- <a href="" class="close" onclick="hello(this)">x</a> -->
         </div>
     </div>
     <script>
-        var close = document.querySelectorAll('.close')
-        console.log(close)
-        for(let i=0; i < close.length; i++) {
-            close[i].addEventListener('click', (e) => {
-                e.target.parentElement.style.display = 'none'
-                e.preventDefault()
+        var close = document.querySelectorAll(".close");
+        for(let i = 0; i< close.length; i++){
+            close[i].addEventListener("click", function (element) {
+                element.target.parentElement.style.display = "none";
+                element.preventDefault()
             })
         }
 
+
+        // var close = document.querySelectorAll('.close')
+        // console.log(close)
+        // for(let i=0; i< close.length; i++){
+        //     close[i].addEventListener('click', (e) => {
+        //         e.target.parentElement.style.display = 'none';
+        //         e.preventDefault();
+        //     })
+        // }
     </script>
 </body>
 </html>

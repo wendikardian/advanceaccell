@@ -10,19 +10,19 @@
 <body>
     <div class="form">
         <h3 class="title">Coding Competition <br> Enrollment 2021</h3>
-        <form action="result.html" method="GET" target="blank" autocomplete="on" novalidate>
+        <form action="result.html" method="GET" target="blank" autocomplete="on">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Full Name" autocomplete="off" autofocus>
+            <input type="text" id="name" name="name" placeholder="Full Name" autocomplete="off" value="WENDI" autofocus required>
             <label for="password">Password</label>
             <input type="password" id="password" name="password">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your personal email" required>
+            <input type="email" id="email" name="email" placeholder="Your personal email" required >
             <label for="birth">Birth of date</label>
             <input type="date" id="birth" name="birth">
             <label for="address">Address</label>
             <textarea name="address" id="address" cols="30" rows="10">The full adress of yours</textarea>
             <label for="quantity">Quantity</label>
-            <input type="number" id="quantity" name="quantity">
+            <input type="number" min="1" max="10" id="quantity" name="quantity">
             <label for="radio" style="margin-bottom: 10px;">Programming Language</label>
             <div class="section">
                 <input id="radio" type="radio" name="language" value HTML>

@@ -1,5 +1,5 @@
 body{
-    background-image: url('img/wave.svg')
+    background-image: url('img/wave.svg');
     background-size: 370%;
     background-repeat: no-repeat;
 }
@@ -14,7 +14,7 @@ body{
 .container-flex{
     display: flex;
     justify-content: space-around;
-    align-item: center;
+    align-items: center;
 }
 
 .container{
@@ -93,9 +93,9 @@ h2{
 }
 
 .reveal{
-    transform: translateY(150px);
+    transform: translateY(300px);
     opacity: 0;
-    transition: all 2s;
+    transition: all 3s;
 }
 
 .active{

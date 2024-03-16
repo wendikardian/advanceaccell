@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Form coding Competition registration</h1>
+        <div class="form-container">
+            <form action="result.html" target="_blank" method="">
+                <div class="input-con">
+                    <label for="fullname">Full name : </label>
+                    <input id="fullname" value="Wendi1" name="fullname" type="text" placeholder="Insert your fullname" required disabled>
+                </div>
+                <div class="input-con">
+                    <label for="password">Password : </label>
+                    <input id="password" type="password" placeholder="Inser your password" required>
+                </div>
+                <div class="input-con">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" autofocus>
+                </div>
+                <div class="input-con">
+                    <label for="phone">Age</label>
+                    <input type="number" min="8" max="24" autofocus>
+                </div>
+                <div class="input-con">
+                    <label for="">Date of Birth</label>
+                    <input type="date">
+                </div>
+                <br>
+                <label for="">Category</label> 
+                <div class="input-con">
+                    
+                    <input type="radio" name="category" id="kids">
+                    <label for="kids">Kids</label>
+                    <input type="radio" name="category" id="teens">
+                    <label for="teens">Teens</label>
+                    <input type="radio" name="category" id="adult">
+                    <label for="adult">Adult</label>
+                </div>
+
+                
+                <br>
+                <label for="">Package for Competition</label>
+                <div class="input">
+                    <input type="checkbox" value="python" name="package" id="package1">
+                    <label for="package1">Python</label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" value="javascript" name="package" id="package1">
+                    <label for="package2">Javascript</label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" value="golang" name="package" id="package1">
+                    <label for="package3">Golang</label>
+                </div>
+                
+                <br>
+                <div class="input-con">
+                    <label for="email">Email : </label>
+                    <input id="email" type="email" placeholder="Insert your fullname">
+                </div>
+                <div class="input-con">
+                    <label for="address">Address : </label>
+                    <textarea name="" id="address" cols="30" rows="10">Hello</textarea>
+                </div>
+                <div class="input-con">
+                    <label for="address">Gender : </label>
+                    <select name="category" id="category">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="input-con">
+                    <label for="photo">Photo Profile</label>
+                    <input type="file"  name="profilepicture" id="photo" multiple>
+                </div>
+
+                <input type="submit" value="kirim">
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var uploadField = document.getElementById("photo");
+
+uploadField.onchange = function() {
+    if(this.files[0].size > 200){
+       alert("File is too big!");
+       this.value = "";
+    };
+};
+    </script>
+</body>
+</html>
